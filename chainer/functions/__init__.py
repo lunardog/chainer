@@ -98,6 +98,7 @@ from chainer.functions.pooling import roi_pooling_2d
 from chainer.functions.pooling import spatial_pyramid_pooling_2d
 from chainer.functions.pooling import unpooling_2d
 from chainer.functions.util import forget
+from chainer.functions.theano import theano_function
 from chainer.links.activation import prelu as links_prelu
 from chainer.links.connection import bilinear as links_bilinear
 from chainer.links.connection import convolution_2d as links_convolution_2d
@@ -337,6 +338,8 @@ unpooling_2d = unpooling_2d.unpooling_2d
 
 Forget = forget.Forget
 forget = forget.forget
+
+TheanoFunction = theano_function.TheanoFunction
 
 # Import for backward compatibility
 PReLU = links_prelu.PReLU
