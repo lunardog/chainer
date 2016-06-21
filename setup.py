@@ -27,9 +27,10 @@ if on_rtd:
 chainer_setup_build.parse_args()
 
 setup(
-    name='chainer',
-    version='1.17.0',
-    description='A flexible framework of neural networks',
+    name='cupy',
+    version='1.0.0',
+    description=('An implementation of NumPy-compatible multi-dimensional '
+                 'array on CUDA'),
     author='Seiya Tokui',
     author_email='tokui@preferred.jp',
     url='http://chainer.org/',
